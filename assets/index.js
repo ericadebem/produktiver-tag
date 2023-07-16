@@ -1,9 +1,24 @@
-c0onectar o botao de entrar
 
+//conectar o botao de entrar
+//salvar o nome de uma variavel
+//salvar storage
 
-salvar o nome de uma variavel
+const getName = () => {
+    const name = document.getElementById('name').value;
+    if (name === '') {
+        alert('Por favor, insira seu nome');
+    localStorage.setItem('name', name); 
+    }
+};
 
-salvar storage
-
-
-
+const redirect = () => {
+    const name = document.getElementById('name').value;
+    if (name === '' || name.length < 3) {
+        alert('Oh Oh! Ungültiger Name :(');
+    } else {
+        localStorage.setItem('name', name);
+        location.href = '/pages/main.html'; 
+    }
+};  
+const welcomeMessage = `Hallo, ${localStorage.getItem('name')}!`;
+document.body.querySelector('#welcomeMessage').innerHTML = welcomeMessage;

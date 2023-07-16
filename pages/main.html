@@ -14,19 +14,49 @@
   </nav>
 
   <body>
+    <h1 id="welcomeMessage"></h1>
   <!-- site content here  retornar com oi fulado--> 
-  <section id="to-do">
+    <section id="to-do">
 
-  </section>  
-  <section id="pomodoro">
-
-  </section>
-     
+    </section>  
+    <section id="pomodoro">
+        <div class="container">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Pomodoro Timer</h3>
+                    <div class="card-header-buttons">
+                        <button id="buttonTypePomodoro"
+                                class="active" 
+                                onclick="setPomodoroType(TIMER_TYPE_POMODORO);">
+                                Pomodoro
+                        </button>
+                        <button id="buttonTypeShortBreak"
+                                onclick="setPomodoroType(TIMER_TYPE_SHORT_BREAK);">
+                            Short Break
+                        </button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div id="circularProgressBar" class="progress-bar">
+                        <div class="progress-bar-inner">
+                            <h2 class="progress-value">25:00</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <button class="btn-sucess" onclick="startTimer();">Start</button>
+                    <button class="btn-danger" onclick="stopTimer();">Stop</button>
+                    <button onclick="resetTimer();">Reset</button>
+                </div>
+            </div>
+        </section>
     <footer>
       <p class="footer">
         &copy; 2023 Erica de Bem | DCI | Web Development Course
       </p>
     </footer>
   </body>
+  <script src="/assets/todo.js"></script>
+  <script src="/assets/pomodoro.js"></script>
   <script src="/assets/index.js"></script>
 </html>
