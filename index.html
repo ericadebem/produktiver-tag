@@ -1,34 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/f6adf96490.js"></script>
     <title>Produktiver Tag</title>
-</head>
-<nav>
+  </head>
+  <nav>
     <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="fragen.html">Como funciona?</a></li>
-        <li><a href="tipps.html">Dicas</a></li>
-        <li><a href="ich.html">Quem sou eu?</a></li>
+      <li><a href="fragen.html">Wie Funktioniert?</a></li>
+      <li><a href="tipps.html">Tipps</a></li>
+      <li><a href="ich.html">Wer bin ich?</a></li>
     </ul>
-</nav>
-<body>
-    <h1>Produktiver Tag</h1>
-    <h2>
-        Faca o seu dia mais produtivo em apenas 3 passos!
-    </h2>
-    <p>Se você é como eu, que tem muitas tarefas para fazer e não sabe por onde começar, esse site é para você. 
-    </p>
+  </nav>
 
-    <h4>Passo 1 - Como posso te chamar?</h4>
-    <input type="text" name="name" id="name" placeholder="Digite aqui">
-    <button type="submit">START</button>
-
+  <body>
+    <section class="home">
+      <h1>Produktiver Tag</h1>
+      <h2>Faca o seu dia mais produtivo em apenas 3 passos!</h2>
+      <p>
+        Se você é como eu, que tem muitas tarefas para fazer e não sabe por onde
+        começar, esse site é para você.
+      </p>
+      <h3>Passo 1 - Como posso te chamar?</h3>
+      <form onsubmit="#" class="input">
+        <input type="text" name="name" id="name" placeholder="Digite aqui" required minlength="3" />
+        <input class="btn" type="submit" value="Start">
+      </form>
+    </section>
     <footer>
-        <p> &copy; 2023 Erica de Bem | DCI | Web Development Course
-        </p>
+      <p class="footer">
+        &copy; 2023 Erica de Bem | DCI | Web Development Course
+      </p>
     </footer>
-</body>
+  </body>
 </html>
