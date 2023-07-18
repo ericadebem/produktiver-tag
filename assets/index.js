@@ -12,7 +12,7 @@ const redirect = () => {
         alert('Oh Oh! Ungültiger Name :(');
     } else {
         localStorage.setItem('name', name);
-        location.href = '/pages/main.html'; 
+        location.href = './pages/main.html'; 
     }
 };  
 const welcomeMessage = `Hallo, ${localStorage.getItem('name')}!`;
