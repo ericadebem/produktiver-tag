@@ -16,5 +16,4 @@ const redirect = () => {
     }
 };  
     const welcomeMessage = `Hallo, ${localStorage.getItem('name')}!`;
-    document.body.getElementById('#welcomeMessage').innerHTML = welcomeMessage;
-    
+    document.body.querySelector('#welcomeMessage').innerHTML = welcomeMessage;
