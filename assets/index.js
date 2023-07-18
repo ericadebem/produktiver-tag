@@ -15,5 +15,6 @@ const redirect = () => {
         location.href = './pages/main.html'; 
     }
 };  
-const welcomeMessage = `Hallo, ${localStorage.getItem('name')}!`;
-document.body.querySelector('#welcomeMessage').innerHTML = welcomeMessage;
+    const welcomeMessage = `Hallo, ${localStorage.getItem('name')}!`;
+    document.body.getElementById('#welcomeMessage').innerHTML = welcomeMessage;
+    
