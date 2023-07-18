@@ -1,15 +1,10 @@
-
-//conectar o botao de entrar
-//salvar o nome de uma variavel
-//salvar storage
-
-const getName = () => {
+/* const getName = () => {
     const name = document.getElementById('name').value;
     if (name === '') {
         alert('Por favor, insira seu nome');
     localStorage.setItem('name', name); 
     }
-};
+};|*/
 
 const redirect = () => {
     const name = document.getElementById('name').value;
