@@ -21,7 +21,7 @@ nav {
     display: flex;
     justify-content: right;
     align-items: right;
-    background-color: #82c3f4;
+    background-color: #60b6fb;
     position: fixed;
     width: 100%;
     top: 0;
@@ -36,7 +36,7 @@ a {
 }
 
 a:hover {
-    color:white;
+    color: #FFF1D0;
 }
 
 ul {
@@ -57,27 +57,27 @@ li {
 h1{
     text-align: center;
     font-size: 3rem;
-    color: #245f8c;
+    color: #ffc600;
     padding-top: 2rem;
 }
 
 h2{
     text-align: center;
     font-size: 2rem;
-    color: #82c3f4;
+    color: #60b6fb;
     padding: 2rem;
 }
 p {
     text-align: center;
     font-size: 1.5rem;
-    color: #245f8c;
+    color: #1e96fc;
     padding: 2rem;
 }
 
 h3 {
     text-align: center;
     font-size: 1.5rem;
-    color: #245f8c;
+    color: #ffc600;
     padding: 2rem;
 }
 
@@ -98,8 +98,8 @@ input {
 
 .btn {
     cursor: pointer;
-    background-color: #82c3f4;
-    color: #245f8c;
+    background-color: #60b6fb;
+    color:  #FFF1D0;
     padding: 0.5rem;
     border: 3px solid #245f8c;
     border-radius: 0.5rem;
@@ -118,7 +118,7 @@ input {
     color: #245f8c;
 }
 .btn:active {
-    color: #82c3f4;
+    color:  #FFF1D0;
     background-color: #245f8c;
 }
 .icon-list {
@@ -143,7 +143,7 @@ img{
 }
 
 footer {
-    background-color: #82c3f4;
+    background-color: #60b6fb;
     color: #245f8c;
     text-align: center;
     position: fixed;
