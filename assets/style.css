@@ -10,11 +10,11 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;    
-    font-size: 16px;
+    font-size: 62.5%;
     font-family: 'Poppins', sans-serif;
     height: 100%;
     margin: 3rem 0 3rem 0;
-
+    background-color: #FFFFFF;
 }
 
 nav {
@@ -58,31 +58,47 @@ h1{
     text-align: center;
     font-size: 3rem;
     color: #ffc600;
-    padding-top: 2rem;
+    padding: 2rem 0 2rem 0;
 }
 
 h2{
     text-align: center;
     font-size: 2rem;
-    color: #60b6fb;
-    padding: 2rem;
+    color: #06229D;
+    padding: 1rem;
+}
+
+.schritt {
+    border: 2px dashed #06229D;
+    border-radius: 0.5rem;
+    background-color: #FFD200;
+    width: 20rem;
+    margin: auto;
+    background-clip: content-box;
 }
 p {
     text-align: center;
-    font-size: 1.5rem;
-    color: #1e96fc;
-    padding: 2rem;
+    font-size: 1.0rem;
+    color: #FFC600;
+    padding: 1rem;
 }
 
 h3 {
     text-align: center;
+    font-size: 1rem;
+    color: #06229D;
+    padding: 1rem;
+}
+
+h4 {
+    text-align: center;
+    color: #FFC600;
     font-size: 1.5rem;
-    color: #ffc600;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 input {
-    width: 15%;
+    width: 25%;
     padding: 0.5rem;
     font-size: 1rem;
     border: 1px solid #245f8c;
@@ -114,12 +130,12 @@ input {
 }
 
 .btn:hover {
-    background-color: #72d59a;
-    color: #245f8c;
+    background-color: #FFD200;
+    color: #1E96FC;
 }
 .btn:active {
     color:  #FFF1D0;
-    background-color: #245f8c;
+    background-color: #1E96FC;
 }
 .icon-list {
     display: flex;
@@ -133,7 +149,7 @@ input {
     list-style-type: none;
 }
 .icon a:hover {
-    color: #82c3f4;
+    color: #1360E2;
 }
 img{
     display: block;
@@ -143,8 +159,7 @@ img{
 }
 
 footer {
-    background-color: #60b6fb;
-    color: #245f8c;
+    background-color: #60B6FB;
     text-align: center;
     position: fixed;
     bottom: 0;
@@ -152,8 +167,14 @@ footer {
 }
 .footer {
     display: flex;
+    color: #245f8c;
     justify-content: center;
     align-items: center;
     font-size: 1rem;
     padding: 1rem;
 }
+@keyframes spin { 
+    10% { 
+      transform: rotateZ(360deg);
+    }
+  }
